@@ -1,0 +1,145 @@
+h1 {
+  text-align: center;
+  color: #FFFFFE;
+
+}
+
+a:link {
+  color: #2cb67d;
+  text-decoration: underline;
+  font-weight: bold
+}
+
+a:visited {
+  text-decoration: dotted;
+  color: #7f5af0;
+  font-weight: bold
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: bold
+}
+
+a:active {
+  color: red;
+  text-decoration: underline;
+  font-weight: 900
+}
+
+h2 {
+  color: #FFFFFE;
+}
+
+p {
+  color: #FFFFFE;
+}
+
+/* ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} */
+
+body {
+  font-family: "Veranda", "Arial", sans-serif;
+  background-color: #16161a;
+}
+
+/* nav styling [all nav styles are under div.topnav, .topnav a, .topnav a.active, etc.; use of flex]
+ */
+
+.topnav {
+  background-color: #010101;
+  overflow: hidden;
+  display: flex;
+  /*other properties for navigation styling listed in elements below */
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.topnav a.active {
+  background-color: #2cb67d;
+  color: #010101;
+}
+
+.container {
+  display: grid;
+  color: #FFFFFE
+}
+
+/*this is my grid layout, with 2+ columns, used for 5+ images  */
+.galgrid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  row-gap: 10px;
+  column-gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+} 
+
+/* nth child selectors, see gallery page  */
+div:nth-child(odd) img {
+  border: 10px solid #72757e;
+  max-width: 200px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+div:nth-child(odd) img:hover {
+  border: 10px solid #FFFFFE;
+}
+/* below: all images styled with box-model  */
+img {
+  max-width: 200px;
+  padding: 10px;
+  margin: 5px;
+  border: 10px solid #010101;
+  border-radius: 5px;
+}
+
+/* :hover used over all images, and icon on home/index page  */
+img:hover {
+  border: 10px solid #7f5af0;
+}
+
+
+img.icon {
+  border: 5px solid #FFFFFE;
+  width: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background-color: #010101;
+  transition-duration: 1s;}
+
+
+  img.icon:hover {
+  width: 100px;
+  background-color: #7f5af0 ;
+}
+
+/* below: "skip to main content" link only visible when in-focus, using "focus" pseudo class and position property */
+.offpage {
+  position: absolute;
+  left: -1000px;
+  color: #FFFFFE;
+}
+.offpage:focus {
+  position: absolute;
+  left: 5px;
+  color: #FFFFFE;
+}  

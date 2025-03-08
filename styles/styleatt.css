@@ -1,0 +1,47 @@
+body {
+        font-family: sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+    }
+
+h1 {
+        text-align: center;
+    }
+nav {
+    display: flex
+    :space around    
+}
+
+
+.attribution-section {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ccc; /* Optional separator */
+        padding-bottom: 10px; /* Optional padding */
+    }
+
+.attribution-section:last-of-type { /* Remove bottom border on the last item */
+        border-bottom: none;
+    }
+
+    .attribution-title {
+        font-weight: bold;
+    }
+
+    .attribution-list {
+        /* list-style-type: none; /* Remove bullet points */ */
+        padding-left: 0; /* Remove default left padding */
+    }
+
+    .attribution-item {
+        margin-bottom: 5px; /* Spacing between attribution items */
+    }
+
+    .attribution-link {
+        color: blue;
+        text-decoration: underline;
+    }
+.important{
+    font-weight: thick;
+    font-size: 24px;
+    background-color: yellow;
+}
